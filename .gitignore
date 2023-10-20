@@ -1,0 +1,4 @@
+node_modules/
+*.sw*
+.shadow-cljs/
+src/js/screencasttemplate.js

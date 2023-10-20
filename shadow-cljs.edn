@@ -1,0 +1,26 @@
+;; shadow-cljs configuration
+
+{
+  :nrepl {:port 39777}
+:source-paths
+  ["src/main" "src/js"]
+
+  :dependencies [
+                 [funcool/promesa "8.0.450"]
+                 [com.andrewmcveigh/cljs-time "0.5.2"]
+                 [testdouble/clojurescript.csv "0.6.0"]
+                 ]
+
+ :http {:port 9632}
+
+  :builds
+  {:app
+  {
+    :target :node-library
+    :compiler-options {:infer-externs :auto }
+    :exports {:handler screencasttemplate.core/handler
+              }
+    :output-to "src/js/screencasttemplate.js"
+
+}}
+}

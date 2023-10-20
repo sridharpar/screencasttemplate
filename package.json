@@ -1,0 +1,12 @@
+{
+  "name": "screencasttemplate",
+  "version": "0.0.1",
+  "private": true,
+  "devDependencies": {
+    "shadow-cljs": "2.18.0"
+  },
+  "dependencies": {
+    "node-fetch": "^2.6.1",
+    "ws": "^8.5.0"
+  }
+}
